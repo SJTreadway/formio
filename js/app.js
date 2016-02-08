@@ -1,0 +1,1 @@
+angular.module('christmasPartyApp', ['ui.router', 'formio', 'ui.select']);

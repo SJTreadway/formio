@@ -1,14 +1,46 @@
 <!DOCTYPE html>
-<html ng-app="ChristmasApp">
+<html>
     <head>
         <title>Christmas Party</title>
+        <!-- bower:css -->
+        <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
+        <link rel="stylesheet" href="bower_components/ui-select/dist/select.css" />
+        <link rel="stylesheet" href="bower_components/formio/css/formio.css" />
+        <!-- endbower -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
-    <body ng-controller="mainCtrl">
-        <h1>Hello World</h1>
+    <body ng-app="christmasPartyApp" ng-controller="mainCtrl">
+       <div class="container-fluid">
+           <div class="row">
+               <div class="col-md-4"></div>
+               <div class="col-md-4">
+                    <h1 class="text-center">Christmas Party</h1>
+                    <!-- Add the form.io form. -->
+                    <formio src="'https://ahojwxfmyizyvfk.form.io/user'"></formio>
+               </div>
+               <div class="col-md-4"></div>
+           </div>
+       </div>    
+        
+        <!-- bower:js -->
         <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+        <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-        <script src="js/controllers/mainCtrl.js"></script>
+        <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+        <script src="bower_components/moment/moment.js"></script>
+        <script src="bower_components/ng-file-upload/ng-file-upload.js"></script>
+        <script src="bower_components/angular-moment/angular-moment.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="bower_components/bootstrap-ui-datetime-picker/dist/datetime-picker.min.js"></script>
+        <script src="bower_components/signature_pad/signature_pad.js"></script>
+        <script src="bower_components/angular-ui-mask/dist/mask.js"></script>
+        <script src="bower_components/ui-select/dist/select.js"></script>
+        <script src="bower_components/formio/dist/formio.js"></script>
+        <!-- endbower -->
+        <script src="js/app.js"></script>
+        <script src="js/mainCtrl.js"></script>
     </body>
     
 </html>
