@@ -18,6 +18,13 @@
                     <h1 class="text-center">Christmas Party</h1>
                     <!-- Add the form.io form. -->
                     <formio src="'https://ahojwxfmyizyvfk.form.io/user'"></formio>
+                    <br/>
+                    <div ng-repeat="info in info">
+                    <h3>Name: {{info.data.name}}</h3>
+                    <h3># of Guests: {{info.data.totalofGuestsBringing}}</h3>
+                    <h3>Food: {{info.data.whatfoodwillyoubring}}</h3>
+                    <hr/>
+                    </div>
                </div>
                <div class="col-md-4"></div>
            </div>
@@ -41,6 +48,7 @@
         <!-- endbower -->
         <script src="js/app.js"></script>
         <script src="js/mainCtrl.js"></script>
+        <script src="js/service.js"></script>
     </body>
     
 </html>
